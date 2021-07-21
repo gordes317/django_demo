@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    image: django_demo:v1.0.1
+    container_name: django_demo
+    working_dir: /opt/django_demo
+    volumes:
+      - .:/opt/django_demo
+    ports:
+      - "8000:8000"
+    command: python /opt/django_demo/manage.py runserver 0.0.0.0:8000
