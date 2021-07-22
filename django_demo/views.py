@@ -6,4 +6,4 @@ from django.http import JsonResponse
 
 
 def hello(request):
-    return JsonResponse({'hello': 'word'})
+    return JsonResponse({'hello': 'word222222'})
