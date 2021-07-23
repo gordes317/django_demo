@@ -6,7 +6,7 @@ WORKDIR /opt/django_demo
 #将当前目录加入到工作目录中
 ADD . /opt/django_demo
 #install any needed pacakges in requirements.txt，你要把所有需要安装的Python模块加到这文件中。
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple 
 #对外暴露端口
 EXPOSE 8080 5000
 #设置环境变量
